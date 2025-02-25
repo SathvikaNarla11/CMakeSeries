@@ -10,7 +10,7 @@ T addFun(int a, int b)
 int main()
 {
     int a = 14;
-    int b = 14;
+    int b = 10;
     int res = addFun<int>(a, b);
     cout<<"Sum is : "<<res<<endl;
 }
