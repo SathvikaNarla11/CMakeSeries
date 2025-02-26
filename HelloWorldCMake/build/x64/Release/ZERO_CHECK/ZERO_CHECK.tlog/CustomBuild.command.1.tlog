@@ -1,0 +1,10 @@
+^D:\VSCODECMAKE\CMAKESERIES\HELLOWORLDCMAKE\BUILD\CMAKEFILES\8DFD0999729AA9B559F393C6A28EE733\GENERATE.STAMP.RULE
+setlocal
+C:\msys64\mingw64\bin\cmake.exe -SD:/VSCodeCMake/CMakeSeries/HelloWorldCMake -BD:/VSCodeCMake/CMakeSeries/HelloWorldCMake/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/VSCodeCMake/CMakeSeries/HelloWorldCMake/build/HelloApp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
